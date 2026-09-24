@@ -1,0 +1,11 @@
+{
+  "source_test_csv": "/content/drive/MyDrive/html_token_analysis/jina_v2_pipeline/data/splits/test.csv",
+  "source_test_csv_size": 272041,
+  "seed": 42,
+  "per_class": 500,
+  "num_pages": 1000,
+  "source_population": {
+    "benign": 6183,
+    "phishing": 4698
+  }
+}
