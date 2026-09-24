@@ -1,0 +1,49 @@
+{
+  "signature": {
+    "experiment": "rag_vs_norag_k4",
+    "condition": "closer_signal_only_relative_similarity_direction",
+    "source_rag_input_signature": {
+      "retrieval_signature": {
+        "sample_csv": "/content/drive/MyDrive/html_token_analysis/jina_v2_pipeline/experiments/topk_1000_balanced/data/sample/test_1000_balanced_seed42.csv",
+        "sample_csv_size": 25016,
+        "test_chunks_size": 148712837,
+        "test_embeddings_size": 2854806656,
+        "db_signature": {
+          "total_rows": 3662414,
+          "next_row_index": 3662414,
+          "input_signature": {
+            "chunks_size": 584924279,
+            "embeddings_size": 11250935936
+          },
+          "benign_collection": "html_chunks_benign",
+          "phishing_collection": "html_chunks_phishing"
+        },
+        "max_k": 16,
+        "retrieval_per_label": 1,
+        "importance_formula": "max(s_p,s_b)*abs(s_p-s_b)"
+      },
+      "top_k": 4,
+      "num_pages": 1000,
+      "shard_pages": 250,
+      "prompt_scores_included": true,
+      "source_file_in_prompt": false,
+      "page_url_in_prompt": false
+    },
+    "source_top_k": 4,
+    "exact_same_selected_query_chunks": true,
+    "query_html_in_prompt": false,
+    "retrieved_examples_in_prompt": false,
+    "retrieval_labels_in_prompt": false,
+    "retrieval_similarity_numeric_in_prompt": false,
+    "relative_similarity_direction_in_prompt": true,
+    "only_relative_similarity_direction_in_prompt": true,
+    "importance_in_prompt": false,
+    "page_url_in_prompt": false,
+    "model": "Qwen/Qwen2.5-Coder-7B-Instruct-AWQ",
+    "max_model_len": 16384,
+    "max_new_tokens": 8,
+    "temperature": 0.0
+  },
+  "finalized": true,
+  "num_pages": 1000
+}
