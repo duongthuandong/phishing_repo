@@ -1,0 +1,175 @@
+{
+  "experiment": "topk_1000_balanced",
+  "metrics": {
+    "1": {
+      "num_pages": 1000,
+      "valid_predictions": 1000,
+      "invalid_predictions": 0,
+      "coverage": 1.0,
+      "accuracy_all_invalid_as_wrong": 0.87,
+      "balanced_accuracy_all_invalid_as_wrong": 0.87,
+      "recall_benign_all": 0.984,
+      "recall_phishing_all": 0.756,
+      "valid_only": {
+        "precision_phishing": 0.9792746113989638,
+        "recall_phishing": 0.756,
+        "specificity_benign": 0.984,
+        "f1_phishing": 0.8532731376975169,
+        "confusion_matrix": {
+          "tn": 492,
+          "fp": 8,
+          "fn": 122,
+          "tp": 378
+        }
+      },
+      "avg_prompt_tokens": 821.829,
+      "avg_groups_used": 1.0,
+      "context_truncated_pages": 0,
+      "top_k": 1,
+      "model": "Qwen/Qwen2.5-Coder-7B-Instruct-AWQ",
+      "inference_name": "scores_free_reasoning",
+      "max_model_len": 16384,
+      "max_num_seqs": 32,
+      "prompt_scores_included": true,
+      "source_file_included": false,
+      "page_url_included": false,
+      "prompt_style": "free_reasoning"
+    },
+    "2": {
+      "num_pages": 1000,
+      "valid_predictions": 1000,
+      "invalid_predictions": 0,
+      "coverage": 1.0,
+      "accuracy_all_invalid_as_wrong": 0.9,
+      "balanced_accuracy_all_invalid_as_wrong": 0.8999999999999999,
+      "recall_benign_all": 0.98,
+      "recall_phishing_all": 0.82,
+      "valid_only": {
+        "precision_phishing": 0.9761904761904762,
+        "recall_phishing": 0.82,
+        "specificity_benign": 0.98,
+        "f1_phishing": 0.8913043478260869,
+        "confusion_matrix": {
+          "tn": 490,
+          "fp": 10,
+          "fn": 90,
+          "tp": 410
+        }
+      },
+      "avg_prompt_tokens": 1399.112,
+      "avg_groups_used": 1.829,
+      "context_truncated_pages": 0,
+      "top_k": 2,
+      "model": "Qwen/Qwen2.5-Coder-7B-Instruct-AWQ",
+      "inference_name": "scores_free_reasoning",
+      "max_model_len": 16384,
+      "max_num_seqs": 32,
+      "prompt_scores_included": true,
+      "source_file_included": false,
+      "page_url_included": false,
+      "prompt_style": "free_reasoning"
+    },
+    "4": {
+      "num_pages": 1000,
+      "valid_predictions": 1000,
+      "invalid_predictions": 0,
+      "coverage": 1.0,
+      "accuracy_all_invalid_as_wrong": 0.909,
+      "balanced_accuracy_all_invalid_as_wrong": 0.909,
+      "recall_benign_all": 0.984,
+      "recall_phishing_all": 0.834,
+      "valid_only": {
+        "precision_phishing": 0.9811764705882353,
+        "recall_phishing": 0.834,
+        "specificity_benign": 0.984,
+        "f1_phishing": 0.9016216216216216,
+        "confusion_matrix": {
+          "tn": 492,
+          "fp": 8,
+          "fn": 83,
+          "tp": 417
+        }
+      },
+      "avg_prompt_tokens": 2385.443,
+      "avg_groups_used": 3.229,
+      "context_truncated_pages": 0,
+      "top_k": 4,
+      "model": "Qwen/Qwen2.5-Coder-7B-Instruct-AWQ",
+      "inference_name": "scores_free_reasoning",
+      "max_model_len": 16384,
+      "max_num_seqs": 32,
+      "prompt_scores_included": true,
+      "source_file_included": false,
+      "page_url_included": false,
+      "prompt_style": "free_reasoning"
+    },
+    "8": {
+      "num_pages": 1000,
+      "valid_predictions": 1000,
+      "invalid_predictions": 0,
+      "coverage": 1.0,
+      "accuracy_all_invalid_as_wrong": 0.909,
+      "balanced_accuracy_all_invalid_as_wrong": 0.909,
+      "recall_benign_all": 0.974,
+      "recall_phishing_all": 0.844,
+      "valid_only": {
+        "precision_phishing": 0.9701149425287356,
+        "recall_phishing": 0.844,
+        "specificity_benign": 0.974,
+        "f1_phishing": 0.9026737967914439,
+        "confusion_matrix": {
+          "tn": 487,
+          "fp": 13,
+          "fn": 78,
+          "tp": 422
+        }
+      },
+      "avg_prompt_tokens": 4142.732,
+      "avg_groups_used": 5.518,
+      "context_truncated_pages": 0,
+      "top_k": 8,
+      "model": "Qwen/Qwen2.5-Coder-7B-Instruct-AWQ",
+      "inference_name": "scores_free_reasoning",
+      "max_model_len": 16384,
+      "max_num_seqs": 32,
+      "prompt_scores_included": true,
+      "source_file_included": false,
+      "page_url_included": false,
+      "prompt_style": "free_reasoning"
+    },
+    "16": {
+      "num_pages": 1000,
+      "valid_predictions": 1000,
+      "invalid_predictions": 0,
+      "coverage": 1.0,
+      "accuracy_all_invalid_as_wrong": 0.9,
+      "balanced_accuracy_all_invalid_as_wrong": 0.8999999999999999,
+      "recall_benign_all": 0.986,
+      "recall_phishing_all": 0.814,
+      "valid_only": {
+        "precision_phishing": 0.9830917874396136,
+        "recall_phishing": 0.814,
+        "specificity_benign": 0.986,
+        "f1_phishing": 0.8905908096280087,
+        "confusion_matrix": {
+          "tn": 493,
+          "fp": 7,
+          "fn": 93,
+          "tp": 407
+        }
+      },
+      "avg_prompt_tokens": 7354.375,
+      "avg_groups_used": 9.471,
+      "context_truncated_pages": 91,
+      "top_k": 16,
+      "model": "Qwen/Qwen2.5-Coder-7B-Instruct-AWQ",
+      "inference_name": "scores_free_reasoning",
+      "max_model_len": 16384,
+      "max_num_seqs": 32,
+      "prompt_scores_included": true,
+      "source_file_included": false,
+      "page_url_included": false,
+      "prompt_style": "free_reasoning"
+    }
+  }
+}
