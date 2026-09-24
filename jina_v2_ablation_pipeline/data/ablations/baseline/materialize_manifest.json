@@ -1,0 +1,109 @@
+{
+  "baseline": true,
+  "reuse_original_jina_embeddings": true,
+  "num_target_pages": 2500,
+  "split_stats": {
+    "train": {
+      "pages": 2000,
+      "label_0": 1000,
+      "label_1": 1000,
+      "sha256": "f6df4acc3bd6c97d1db5dacb603db3fb8be4757b1a97d747ba184b1bf9a96f3e"
+    },
+    "test": {
+      "pages": 500,
+      "label_0": 250,
+      "label_1": 250,
+      "sha256": "4e29ba7d8c78363ac301fce458a6f0a4ea64bd59c1f37ef04b8e4c1fe90d25bb"
+    }
+  },
+  "input_signature": {
+    "split_sha256": {
+      "train": "f6df4acc3bd6c97d1db5dacb603db3fb8be4757b1a97d747ba184b1bf9a96f3e",
+      "test": "4e29ba7d8c78363ac301fce458a6f0a4ea64bd59c1f37ef04b8e4c1fe90d25bb"
+    },
+    "sources": {
+      "original_train": {
+        "chunks_path": "/content/drive/MyDrive/html_token_analysis/jina_v2_pipeline/data/chunks/train_chunks.jsonl.gz",
+        "chunks_size": 584924279,
+        "embeddings_path": "/content/drive/MyDrive/html_token_analysis/jina_v2_pipeline/data/embeddings/train_embeddings.npy",
+        "embeddings_size": 11250935936
+      },
+      "original_test": {
+        "chunks_path": "/content/drive/MyDrive/html_token_analysis/jina_v2_pipeline/data/chunks/test_chunks.jsonl.gz",
+        "chunks_size": 148712837,
+        "embeddings_path": "/content/drive/MyDrive/html_token_analysis/jina_v2_pipeline/data/embeddings/test_embeddings.npy",
+        "embeddings_size": 2854806656
+      }
+    }
+  },
+  "source_manifests": [
+    {
+      "source_name": "original_train",
+      "source_signature": {
+        "chunks_path": "/content/drive/MyDrive/html_token_analysis/jina_v2_pipeline/data/chunks/train_chunks.jsonl.gz",
+        "chunks_size": 584924279,
+        "embeddings_path": "/content/drive/MyDrive/html_token_analysis/jina_v2_pipeline/data/embeddings/train_embeddings.npy",
+        "embeddings_size": 11250935936
+      },
+      "source_rows": 3662414,
+      "embedding_dim": 768,
+      "selected_chunks": {
+        "train": 144966,
+        "test": 37445
+      },
+      "selected_pages": {
+        "train": 1801,
+        "test": 454
+      },
+      "target_split_sha256": {
+        "train": "f6df4acc3bd6c97d1db5dacb603db3fb8be4757b1a97d747ba184b1bf9a96f3e",
+        "test": "4e29ba7d8c78363ac301fce458a6f0a4ea64bd59c1f37ef04b8e4c1fe90d25bb"
+      }
+    },
+    {
+      "source_name": "original_test",
+      "source_signature": {
+        "chunks_path": "/content/drive/MyDrive/html_token_analysis/jina_v2_pipeline/data/chunks/test_chunks.jsonl.gz",
+        "chunks_size": 148712837,
+        "embeddings_path": "/content/drive/MyDrive/html_token_analysis/jina_v2_pipeline/data/embeddings/test_embeddings.npy",
+        "embeddings_size": 2854806656
+      },
+      "source_rows": 929299,
+      "embedding_dim": 768,
+      "selected_chunks": {
+        "train": 2419,
+        "test": 434
+      },
+      "selected_pages": {
+        "train": 199,
+        "test": 46
+      },
+      "target_split_sha256": {
+        "train": "f6df4acc3bd6c97d1db5dacb603db3fb8be4757b1a97d747ba184b1bf9a96f3e",
+        "test": "4e29ba7d8c78363ac301fce458a6f0a4ea64bd59c1f37ef04b8e4c1fe90d25bb"
+      }
+    }
+  ],
+  "outputs": {
+    "train": {
+      "pages_with_chunks": 2000,
+      "chunks": 147385,
+      "embedding_shape": [
+        147385,
+        768
+      ],
+      "chunks_file": "/content/drive/MyDrive/html_token_analysis/jina_v2_ablation_pipeline/data/ablations/baseline/chunks/train_chunks.jsonl.gz",
+      "embeddings_file": "/content/drive/MyDrive/html_token_analysis/jina_v2_ablation_pipeline/data/ablations/baseline/embeddings/train_embeddings.npy"
+    },
+    "test": {
+      "pages_with_chunks": 500,
+      "chunks": 37879,
+      "embedding_shape": [
+        37879,
+        768
+      ],
+      "chunks_file": "/content/drive/MyDrive/html_token_analysis/jina_v2_ablation_pipeline/data/ablations/baseline/chunks/test_chunks.jsonl.gz",
+      "embeddings_file": "/content/drive/MyDrive/html_token_analysis/jina_v2_ablation_pipeline/data/ablations/baseline/embeddings/test_embeddings.npy"
+    }
+  }
+}
