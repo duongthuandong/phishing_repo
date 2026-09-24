@@ -4,7 +4,6 @@
 *.tar.gz
 *.csv.gz
 html_clean*/
-ml_features.csv
 
 # Generated chunks, embeddings, vector databases, and model artifacts
 **/chunks/
@@ -14,7 +13,6 @@ ml_features.csv
 **/input/
 **/inputs/
 **/retrieval/
-**/splits/
 *.npy
 *.npz
 *.bin
