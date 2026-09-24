@@ -1,0 +1,33 @@
+# Raw data and archives
+*.zip
+*.tar
+*.tar.gz
+*.csv.gz
+html_clean*/
+ml_features.csv
+
+# Generated chunks, embeddings, vector databases, and model artifacts
+**/chunks/
+**/embeddings/
+**/chromadb/
+**/models/
+**/input/
+**/inputs/
+**/retrieval/
+**/splits/
+*.npy
+*.npz
+*.bin
+*.pickle
+*.pkl
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+
+# Python/editor noise
+__pycache__/
+*.py[cod]
+.DS_Store
+.idea/
+.vscode/
