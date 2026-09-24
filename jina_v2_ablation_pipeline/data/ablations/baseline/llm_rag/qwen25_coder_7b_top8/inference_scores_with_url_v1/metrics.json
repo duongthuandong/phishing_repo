@@ -1,0 +1,32 @@
+{
+  "num_pages": 500,
+  "valid_predictions": 500,
+  "invalid_predictions": 0,
+  "coverage": 1.0,
+  "accuracy_all_invalid_as_wrong": 0.752,
+  "balanced_accuracy_all_invalid_as_wrong": 0.752,
+  "recall_benign_all": 0.984,
+  "recall_phishing_all": 0.52,
+  "valid_only": {
+    "precision_phishing": 0.9701492537313433,
+    "recall_phishing": 0.52,
+    "specificity_benign": 0.984,
+    "f1_phishing": 0.6770833333333334,
+    "confusion_matrix": {
+      "tn": 246,
+      "fp": 4,
+      "fn": 120,
+      "tp": 130
+    }
+  },
+  "model": "Qwen/Qwen2.5-Coder-7B-Instruct-AWQ",
+  "run_name": "qwen25_coder_7b_top8",
+  "inference_name": "scores_with_url_v1",
+  "max_model_len": 16384,
+  "max_num_seqs": 32,
+  "generate_scope": "one_input_shard_per_call",
+  "prompt_scores_included": true,
+  "source_file_included": false,
+  "page_url_included": true,
+  "prompt_style": "free_reasoning"
+}
