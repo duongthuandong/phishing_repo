@@ -1,0 +1,34 @@
+{
+  "num_pages": 1000,
+  "valid_predictions": 1000,
+  "invalid_predictions": 0,
+  "coverage": 1.0,
+  "accuracy_all_invalid_as_wrong": 0.87,
+  "balanced_accuracy_all_invalid_as_wrong": 0.87,
+  "recall_benign_all": 0.984,
+  "recall_phishing_all": 0.756,
+  "valid_only": {
+    "precision_phishing": 0.9792746113989638,
+    "recall_phishing": 0.756,
+    "specificity_benign": 0.984,
+    "f1_phishing": 0.8532731376975169,
+    "confusion_matrix": {
+      "tn": 492,
+      "fp": 8,
+      "fn": 122,
+      "tp": 378
+    }
+  },
+  "avg_prompt_tokens": 821.829,
+  "avg_groups_used": 1.0,
+  "context_truncated_pages": 0,
+  "top_k": 1,
+  "model": "Qwen/Qwen2.5-Coder-7B-Instruct-AWQ",
+  "inference_name": "scores_free_reasoning",
+  "max_model_len": 16384,
+  "max_num_seqs": 32,
+  "prompt_scores_included": true,
+  "source_file_included": false,
+  "page_url_included": false,
+  "prompt_style": "free_reasoning"
+}
