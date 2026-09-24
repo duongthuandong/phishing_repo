@@ -1,0 +1,35 @@
+{
+  "signature": {
+    "model": "Qwen/Qwen2.5-Coder-7B-Instruct-AWQ",
+    "max_model_len": 16384,
+    "max_new_tokens": 8,
+    "temperature": 0.0,
+    "input_signature": {
+      "test_chunks_size": 148712837,
+      "test_embeddings_size": 2854806656,
+      "total_rows": 929299,
+      "top_n": 8,
+      "retrieval_per_label": 1,
+      "importance_formula": "max(s_p,s_b)*abs(s_p-s_b)",
+      "benign_collection": "html_chunks_benign",
+      "phishing_collection": "html_chunks_phishing",
+      "db_signature": {
+        "next_row_index": 3662414,
+        "total_rows": 3662414,
+        "completed_percent": 100,
+        "input_signature": {
+          "chunks_size": 584924279,
+          "embeddings_size": 11250935936
+        },
+        "benign_collection": "html_chunks_benign",
+        "phishing_collection": "html_chunks_phishing"
+      }
+    },
+    "prompt_version": 2,
+    "prompt_style": "free_reasoning",
+    "scores_in_prompt": true,
+    "source_file_in_prompt": false
+  },
+  "finalized": true,
+  "num_pages": 10881
+}
