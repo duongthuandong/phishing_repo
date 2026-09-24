@@ -1,0 +1,36 @@
+{
+  "num_pages": 1000,
+  "valid_predictions": 1000,
+  "invalid_predictions": 0,
+  "coverage": 1.0,
+  "accuracy_all_invalid_as_wrong": 0.548,
+  "balanced_accuracy_all_invalid_as_wrong": 0.548,
+  "recall_benign_all": 0.958,
+  "recall_phishing_all": 0.138,
+  "valid_only": {
+    "precision_phishing": 0.7666666666666667,
+    "recall_phishing": 0.138,
+    "specificity_benign": 0.958,
+    "f1_phishing": 0.2338983050847458,
+    "confusion_matrix": {
+      "tn": 479,
+      "fp": 21,
+      "fn": 431,
+      "tp": 69
+    }
+  },
+  "experiment": "rag_vs_norag_k4",
+  "condition": "no_rag_query_chunks_only",
+  "top_k": 4,
+  "exact_same_selected_query_chunks_as_rag": true,
+  "retrieved_examples_in_prompt": false,
+  "retrieval_similarity_in_prompt": false,
+  "importance_in_prompt": false,
+  "page_url_included": false,
+  "model": "Qwen/Qwen2.5-Coder-7B-Instruct-AWQ",
+  "max_model_len": 16384,
+  "max_num_seqs": 32,
+  "avg_prompt_tokens": 823.772,
+  "avg_groups_used": 3.229,
+  "context_truncated_pages": 0
+}
